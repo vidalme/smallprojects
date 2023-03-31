@@ -1,6 +1,7 @@
 import { Grid, GridItem, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
+import { data } from "../../utils/data";
 
 export default function ProductsGrid() {
   const [products, setProducts] = useState();
@@ -11,9 +12,11 @@ export default function ProductsGrid() {
       async function fetchProducts() {
         try {
           setIsLoading(true);
-          const res = await fetch("./data/products.json");
+          const res = await fetch("../../../products.json");
           const json = await res.json();
           setProducts(json.products);
+          // const { products } = data;
+          // setProducts(products);
         } catch (error) {
           console.log(error.message);
         }
