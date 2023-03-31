@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .zer-relative {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background-color: goldenrod;
+      }
+      .pri-relative {
+        width: 200px;
+        height: 300px;
+        background-color: violet;
+        position: relative;
+        top: 50px;
+        left: 50px;
+      }
+      .seg-relative {
+        position: absolute;
+        background-color: navy;
+        width: 100px;
+        height: 100px;
+        right: 0px;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zer-relative">
+      <div class="pri-relative">
+        <div class="seg-relative"></div>
+      </div>
+    </div>
+  </body>
+</html>

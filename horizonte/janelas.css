@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  position: relative;
+}

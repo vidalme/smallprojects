@@ -1,0 +1,228 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: calc(100% - 178px);
+}
+body,
+button,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  font-family: "source sans pro";
+}
+
+.logo-link {
+  all: initial;
+  cursor: pointer;
+}
+
+#logo-link * {
+  all: unset;
+}
+
+:root {
+  --cinzaescuro: #333333;
+  --cinzamenosescuro: #272727;
+}
+
+header {
+  height: 175px;
+}
+.logo-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  height: 85px;
+}
+
+.container-header {
+  background-image: url("/material/imgs/bg_header_hp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: grid;
+  align-content: space-between;
+}
+
+.navegacao-topo {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  max-width: 1150px;
+}
+
+ul {
+  /* display: flex; */
+}
+button {
+  float: left;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  height: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+a {
+  text-decoration: none;
+  cursor: none;
+}
+
+.topo-data {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--cinzamenosescuro);
+}
+
+.data-texto {
+  font-family: "Merriweather";
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 28%;
+}
+
+h1 {
+  color: var(--cinzaescuro);
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: -15px;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--cinzaescuro);
+}
+h4 {
+  font-family: "Merriweather";
+  text-align: center;
+}
+
+.corpo-div-main {
+  background-color: #efefef;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  block-size: auto;
+  height: 100%;
+}
+
+.text-holder-home {
+  display: block;
+  justify-content: center;
+  width: 80%;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h4 {
+  font-family: "Merriweather";
+  color: var(--cinzaescuro);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.corpo-div-main {
+  justify-content: space-between;
+  padding-top: 2rem;
+  max-width: 1150px;
+  height: auto;
+}
+
+.praias-holder {
+  display: flex;
+}
+
+.praias-ul {
+  margin-top: 55px;
+  margin-left: 28px;
+  margin-right: 18px;
+  text-align: right;
+  color: #888888;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  width: 100px;
+}
+
+.praias-ul li {
+  color: #888888;
+}
+.praias-ul li:hover {
+  color: #4e4e4e;
+}
+.praia-conteudo {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 8px;
+  justify-content: space-between;
+  background-color: white;
+}
+.menu-lateral {
+  display: flex;
+  position: relative;
+}
+.seta-div {
+  width: 15px;
+  position: absolute;
+  right: 00px;
+}
+
+.praia-pics500 {
+  /* width: 400px; */
+  /* border: 2px solid tomato; */
+}
+
+/* MEDIA QUERIES */
+/* .praias-holder > div {
+  color: red;
+  font-size: 50px;
+} */
+/* @media screen and (max-width: 1000px) {
+  .praias-holder > p {
+    color: red;
+    font-size: 50px;
+  }
+} ; */
