@@ -7,7 +7,10 @@ const CartContext = createContext(initialCartState);
 const CartDispatchContext = createContext(null);
 
 export function CartContextProvider({ children }) {
+  // console.log(initialCartState);
   const [state, dispatch] = useReducer(cartReducer, initialCartState);
+
+  console.log(initialCartState);
 
   const value = {
     state,

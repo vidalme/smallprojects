@@ -3,6 +3,7 @@ import * as ACTION from "./actions";
 function setLocalData(data) {
   localStorage.setItem("userCart", JSON.stringify(data));
 }
+
 function getLocalData() {
   const initCart = localStorage.getItem("userCart");
   return JSON.parse(initCart);
@@ -11,15 +12,18 @@ function getLocalData() {
 function getInitCart() {
   let initCart = getLocalData();
 
+  // console.log(getLocalData());
+
   if (initCart) {
     return initCart;
   } else {
-    initCart = {
+    return (initCart = {
       total: 0,
       ammount: 0,
       list: [],
-    };
+    });
   }
+  console.log(initCart);
 }
 
 export const initialCartState = getInitCart();
@@ -59,9 +63,14 @@ function isAlreadyInCart(product, list) {
 }
 
 export default function cartReducer(state, action) {
+  // console.log(state);
+  // console.log(action);
+
   const { type, payload } = action;
   const { counter, name, price, id } = payload;
+
   const { list } = state;
+  // console.log(typeof list);
 
   const product = {
     name,
