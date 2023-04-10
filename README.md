@@ -2,4 +2,4 @@
 compilation of small mostly educational projects
 
 Live versions
--> Shopping cart 
+-> Shopping cart https://shoppingcart-vidalme.netlify.app
