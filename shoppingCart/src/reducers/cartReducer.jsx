@@ -12,8 +12,6 @@ function getLocalData() {
 function getInitCart() {
   let initCart = getLocalData();
 
-  // console.log(getLocalData());
-
   if (initCart) {
     return initCart;
   } else {
@@ -23,18 +21,9 @@ function getInitCart() {
       list: [],
     });
   }
-  console.log(initCart);
 }
 
 export const initialCartState = getInitCart();
-
-// {
-//   total: 0,
-//   ammount: 0,
-//   list: [],
-// };
-
-// getInitCart();
 
 //returns quantos produtos no total tem no carrinho
 function getAmmount(productsCart) {
@@ -63,15 +52,9 @@ function isAlreadyInCart(product, list) {
 }
 
 export default function cartReducer(state, action) {
-  // console.log(state);
-  // console.log(action);
-
   const { type, payload } = action;
   const { counter, name, price, id } = payload;
-
   const { list } = state;
-  // console.log(typeof list);
-
   const product = {
     name,
     price,

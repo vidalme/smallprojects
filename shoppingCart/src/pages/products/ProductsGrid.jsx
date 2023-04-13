@@ -11,12 +11,12 @@ export default function ProductsGrid() {
     if (!isLoading) {
       async function fetchProducts() {
         try {
-          setIsLoading(true);
-          const res = await fetch("../../../products.json");
-          const json = await res.json();
-          setProducts(json.products);
-          // const { products } = data;
-          // setProducts(products);
+          // setIsLoading(true);
+          // const res = await fetch("../../../products.json");
+          // const json = await res.json();
+          // setProducts(json.products);
+          const { products } = data;
+          setProducts(products);
         } catch (error) {
           console.log(error.message);
         }
